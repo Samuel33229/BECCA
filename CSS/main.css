@@ -1,0 +1,33 @@
+:root{
+    --gray:var(--gray)
+    --pink:#e5345b
+}
+
+.bg-color{
+    background-color: rgb(200, 200, 216);
+}
+
+.bg-primary{
+    background-color:red !important;
+    font-size: 10px;
+}
+
+.nav-item{
+    border-bottom: 0.5px solid black;
+}
+
+.nav-link{
+    border-radius: 16px;
+}
+.nav-link:hover{
+    transition: 0.5s;
+    color: white !important;
+    background-color: black;
+
+}
+
+@media(min-width:992px){
+    .nav-item{
+        border-bottom: none;
+    }
+}
