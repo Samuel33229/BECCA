@@ -1,9 +1,13 @@
 :root{
-    --gray:var(--gray)
+    --white:rgb(0,0,0);
+    --green:rgb(39,155,54);
     /*--pink:#e5345b;*/
 }
 
-
+.bg-color{
+    background-color: var(--white);
+    background-color: var(--green)
+}
 
 .bg-primary{
     background-color:red !important;
@@ -20,7 +24,7 @@
 .nav-link:hover{
     transition: 0.5s;
     color: white !important;
-    background-color:   black;
+    background-color:black;
 
 }
 .nav-btns button{
@@ -28,7 +32,7 @@
 }
 /*Header*/
 #header{
-    background: url(../SRC/fondo-becca.jpg) top/cover no-repeat;
+    background: url(../SRC/Santiago_Bernabeu_01_wallpaperhd.es_.jpg) top/cover no-repeat;
 }
 
 .btn:not(.nav-btns button){
@@ -42,11 +46,48 @@
 
 .btn:not(.nav-btns button):hover{
     background-color: var(--gray);
-    color: white;
+    color:  black;
     border-color: var(--gray);
     transition: 0.5s;
 }
+/* Collection */
+.title h2::before{
+    position: relative;
+    content: ".";
+    color: var(--white);
+    width: 4px;
+    height: 50px;
+    background-color: var(--white);
+    left: -20px;
 
+}
+.best{
+    border-radius: 20px;
+}
+.collection-img img{
+    border-radius: 20px;
+}
+/* Special Products */
+.img.r{
+    border-radius: 20px;
+}
+
+/* Offers */
+#offers{
+    background: url(../SRC/messi-boots.jpg )center/cover no-repeat;
+} 
+#offers .row{
+    min-height: 60vh;
+}
+/*Collection*/
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;background-color: green;
+
+}
 @media(min-width:992px){
     .nav-item{
         border-bottom: none;
