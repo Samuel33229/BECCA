@@ -4,6 +4,11 @@
     /*--pink:#e5345b;*/
 }
 
+.nav-ani{
+    background-color: var(--green);
+    transition: 0.5s;
+}
+
 .bg-color{
     background-color: var(--white);
     background-color: var(--green)
@@ -46,7 +51,7 @@
 
 .btn:not(.nav-btns button):hover{
     background-color: var(--gray);
-    color:  black;
+    color:  cadetblue;
     border-color: var(--gray);
     transition: 0.5s;
 }
@@ -79,6 +84,7 @@
 #offers .row{
     min-height: 60vh;
 }
+
 /*Collection*/
 .collection-img span{
     top: 20px;
@@ -88,6 +94,23 @@
     border-radius: 50%;background-color: green;
 
 }
+
+/* News */
+#newsletter{
+    background-color: rgba(179, 179, 179, 0.05);
+}
+#newslatter p{
+    max-width: 600px;
+}
+
+#newsletter .input-group{
+    max-width: 600px;
+}
+#newsletter .form-control{
+    border-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
 @media(min-width:992px){
     .nav-item{
         border-bottom: none;
